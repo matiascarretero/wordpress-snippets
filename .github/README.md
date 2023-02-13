@@ -6,7 +6,7 @@ With most of this snippets, you can skip installing plugins that provides the sa
 ### How to use
 **PHP** snippets should be pasted in your custom or [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) functions.php file. If you are developing your own plugin file, you have more freedom of choise. Anyway, you **should not** edit core WordPress files (i.e. anything in root or wp-includes folder).
 
-**CSS** snippets can be added to your custo theme style.css file or placed in a new .css file in your theme. You have to [enqueue this new file](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) with this code in your functions.php:
+**CSS** snippets can be added to your custo theme style.css file or placed in a new .css file in your theme. You have to [enqueue this new file](https://developer.wordpress.org/reference/functions/wp_enqueue_style/) with this code in your functions.php:
 ```php
 wp_enqueue_style('custom-css', get_stylesheet_directory_uri().'/style.css');
 ```
